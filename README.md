@@ -13,5 +13,8 @@ For local development, you will probably want to extend this image with tools to
 
 ## Production
 
+## Related / Links ##
+ - Switching from classic installation to composer: https://developers.shopware.com/blog/2018/07/25/an-easy-example-how-to-switch-from-classic-installation-to-composer-installation/
+ 
 ## TO DO
 - [ ] Create a multistage Dockerfile to allow for one single pre-built Dockerfile in both local development and production.
