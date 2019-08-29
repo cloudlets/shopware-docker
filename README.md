@@ -12,6 +12,9 @@ To enter the bash shell of the container, run the following command:
 For local development, you will probably want to extend this image with tools to improve your development experience, like xdebug. You can do by extending the Dockerfile in this repository.
 
 ## Production
+For use in production, we recommend:
+ - Extending this Dockerfile with your Shopware codebase .
+ - Deploying to a Kubernetes cluster. 
 
 ## Related / Links ##
  - Switching from classic installation to composer: https://developers.shopware.com/blog/2018/07/25/an-easy-example-how-to-switch-from-classic-installation-to-composer-installation/
