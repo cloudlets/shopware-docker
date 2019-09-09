@@ -5,15 +5,22 @@ This image contains a Shopware-optimized Nginx + PHP-FPM configuration. Maintain
 To use this image for local development, you can start the Docker image and mount your host volume in the container at /var/www/html/shopware:
 
 ```$ docker run --name your-name -v /your/local/directory:/var/www/html/shopware -p 8080:8080 cloudlets/shopware:latest```
-
+###
 To enter the bash shell of the container, run the following command:
 ```$ docker exec -i -t  your-name /bin/bash```
 
-For local development, you will probably want to extend this image with tools to improve your development experience, like xdebug. You can do by extending the Dockerfile in this repository.
+## Customizing the image
+For local development, you will probably want to customize or extend this image to better fit in your devleopment proces. Below you'll find instructions for extending of customizing the Dockerfile for development purposes.
+
+### Disabling Opcache
+> RUN
+>  { \
+>     echo 'opcache.enable=0'; \
+> } > /usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
 
 ## Production
 For use in production, we recommend:
- - Extending this Dockerfile with your Shopware codebase .
+ - Extending this Dockerfile with your Shopware codebase
  - Deploying to a Kubernetes cluster. 
 
 ## Related / Links ##
