@@ -13,6 +13,7 @@ To enter the bash shell of the container, run the following command:
 For local development, you will probably want to customize or extend this image to better fit in your devleopment proces. Below you'll find instructions for extending of customizing the Dockerfile for development purposes.
 
 ### Disabling Opcache
+To disable opcache, add the following in the FROM-statement of the development stage:
 > RUN
 >  { \
 >     echo 'opcache.enable=0'; \
