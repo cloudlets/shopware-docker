@@ -22,6 +22,7 @@ To disable opcache, add the following in the FROM-statement of the development s
 ## Production
 For use in production, we recommend:
  - Extending this Dockerfile with your Shopware codebase
+ - Add your own entrypoint to start your own deploy-script.
  - Deploying to a Kubernetes cluster. 
 
 ## Related / Links ##
