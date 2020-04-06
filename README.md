@@ -9,6 +9,9 @@ To use this image for local development, you can start the Docker image and moun
 To enter the bash shell of the container, run the following command:
 ```$ docker exec -i -t  your-name /bin/bash```
 
+To enable xdebug during development, add these lines to the development stage in your Dockerfile:
+```RUN pecl install xdebug-2.6.0 && docker-php-ext-enable xdebug```
+
 ## Customizing the image
 For local development, you will probably want to customize or extend this image to better fit in your devleopment proces. Below you'll find instructions for extending of customizing the Dockerfile for development purposes.
 
